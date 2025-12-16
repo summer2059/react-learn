@@ -1,8 +1,12 @@
+import Test from "./test";
 
 function App() {
 
+  const name = "React";
   return (
-      <h1>hello</h1>
+    <><Test/>
+    <h1>hr { name }</h1>
+    </>
   )
 }
 
