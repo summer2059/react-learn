@@ -16,6 +16,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/card'
 
 function App() {
 
@@ -43,6 +44,9 @@ function App() {
   }
   return (
     <>
+      {/* <h1 className="text-4xl font-bold text-white">
+        Tailwind v3 is working 🚀
+      </h1>
       <h1>Hello buddy</h1>
       <h2>Counter Value: {counter}</h2>
 
@@ -53,7 +57,11 @@ function App() {
       <button
       onClick={removeValue}
       // disabled={counter === 0}
-      >Remove Value</button>
+      >Remove Value</button> */}
+
+      <Card username="John Doe" btnText = "Buy Now"/>
+      <Card username= "test"  btnText= "visit me"/>
+
     </>
   )
 }
